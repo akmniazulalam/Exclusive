@@ -1,0 +1,734 @@
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+ul,
+ol {
+  list-style-type: none;
+}
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+@font-face {
+  font-family: "MyFont";
+  src: url("../fonts/fonnts.com-ABCArizonaFlareVariable-Trial.ttf")
+    format("truetype");
+}
+@font-face {
+  font-family: "Aeonik";
+  src: url("../fonts/fonnts.com-Aeonik-Regular.ttf")
+    format("truetype");
+}
+
+.top_header {
+  padding: 8px 0 9px 0;
+  background: #a40011;
+  text-align: center;
+}
+.text-item {
+  font-family: "MyFont", sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 19px;
+  letter-spacing: 0.28px;
+  text-transform: uppercase;
+  color: white;
+}
+.bottom_header {
+  max-width: 1520px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  padding-left: 5rem;
+  padding-right: 5rem;
+}
+.left {
+  display: flex;
+  align-items: center;
+}
+.ml-4 {
+  margin-left: 20px;
+}
+.shop {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  padding: 21px 20px;
+}
+.shop span {
+  font-family: "Roboto", sans-serif;
+  color: #50000b;
+  font-size: 16px;
+  font-weight: 500;
+  display: inline-block;
+  position: relative;
+}
+.discover {
+  font-family: "Roboto", sans-serif;
+  color: #50000b;
+  font-size: 16px;
+  font-weight: 500;
+}
+.class {
+  border: none;
+  font-family: "Roboto", sans-serif;
+  color: #50000b;
+  font-size: 16px;
+  font-weight: 500;
+}
+.shop span:hover::after {
+  width: 100%;
+  height: 2px;
+  background: #50000b;
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  transition: all 0.4s ease-in-out;
+}
+.logo {
+  width: 95px;
+}
+.discover:hover .dropdown {
+}
+.discoverHover {
+  position: relative;
+}
+.dropdown {
+  padding: 8px 16px 14px 16px;
+  background: white;
+  border-radius: 12px;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  color: #50000b;
+  width: 195px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  position: absolute;
+  top: 60px;
+  left: 6px;
+  visibility: hidden;
+  z-index: 9999;
+  transition: all 0.4s ease-in-out;
+}
+.dropdown li a {
+  display: inline-block;
+  position: relative;
+}
+.dropdown li a:hover::after {
+  width: 100%;
+  height: 2px;
+  background: #50000b;
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  transition: all 0.4s ease-in-out;
+}
+.bannerPart {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  /* gap: 60px; */
+}
+.bannerImg {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 5px;
+}
+.bannerbg {
+  background: linear-gradient(to right, #fff, #ff808050);
+  width: 100%;
+}
+.bannerTexts {
+  padding: 80px;
+  width: 68%;
+}
+.bannerTexts h1 {
+  color: #50000b;
+  font-family: "MyFont", sans-serif;
+  font-weight: 500;
+
+  font-size: 40px;
+  line-height: 48px;
+}
+.bannerTexts h3 {
+  color: #50000b;
+  font-family: "MyFont", sans-serif;
+  font-weight: 300;
+  font-size: 39px;
+  padding-top: 20px;
+  font-style: italic;
+  padding-bottom: 15px;
+}
+.bannerTexts p {
+  color: #000;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  padding-top: 20px;
+}
+.bannerTexts button {
+  color: #000;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 24px;
+  padding: 12.5px 36px;
+  color: white;
+  border-radius: 50px;
+  border: none;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+  cursor: pointer;
+  background: #a40011;
+}
+.flex {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  padding-bottom: 15px;
+}
+.guarantee {
+  font-size: 14px;
+  color: #000;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+}
+.text_center {
+  font-size: 32px;
+  line-height: 41.6px;
+  font-weight: 500;
+  color: #50000b;
+  margin: 0 auto;
+  width: 58%;
+  padding-top: 70px;
+  padding-bottom: 50px;
+  font-family: "MyFont", sans-serif;
+  text-align: center;
+  text-transform: uppercase;
+}
+.autoplay {
+  overflow-x: hidden;
+  margin-bottom: 30px;
+}
+.fit_content {
+  height: 350px;
+  width: 300px;
+  object-fit: cover;
+  padding: 0 6px;
+  border-radius: 18px;
+}
+.experience h5 {
+  font-family: "MyFont", sans-serif;
+  font-size: 30px;
+  line-height: 39px;
+  color: #50000b;
+  margin: 0 auto;
+  width: 80%;
+  padding-top: 80px;
+  padding-bottom: 20px;
+  text-align: center;
+  font-weight: 500;
+}
+.experience h6 {
+  font-family: "MyFont", sans-serif;
+  font-size: 18px;
+  color: #50000b;
+  font-style: italic;
+  text-align: center;
+  font-weight: 500;
+}
+.feature {
+  text-align: center;
+  padding-top: 40px;
+  padding-bottom: 50px;
+}
+.feature span {
+  font-family: "Roboto", sans-serif;
+  font-size: 13px;
+  color: #50000b;
+}
+.justify {
+  justify-content: space-between;
+}
+.fit {
+  height: 26px;
+  object-fit: cover;
+  cursor: pointer;
+}
+.features {
+  max-width: 1070px;
+  margin: 0 auto;
+  margin-bottom: 100px;
+}
+.features img {
+  filter: grayscale(100%) brightness(0) invert(0);
+  opacity: 0.6;
+  transition: all 0.4s ease-in-out;
+}
+
+.features img.active,
+.features img:hover {
+  opacity: 1;
+  filter: none;
+  transform: translateY(-5px);
+}
+#statics {
+  background: url("../images/e11c080e6a3dfe568334967ed112b28b4af22f2f_1.jpg.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 80px 0 60px;
+}
+.center {
+  text-align: center;
+}
+#statics h4 {
+  font-size: 32px;
+  color: white;
+  font-weight: 500;
+  font-family: "MyFont", sans-serif;
+  text-align: center;
+  padding-bottom: 15px;
+}
+#statics p {
+  font-size: 18px;
+  line-height: 28.8px;
+  color: white;
+  font-weight: 400;
+  font-family: "Roboto", sans-serif;
+  text-align: center;
+  padding-top: 8px;
+}
+#statics button {
+  color: rgb(80, 0, 11);
+  font-size: 14px;
+  font-weight: 700;
+  border: none;
+  border-radius: 50px;
+  text-transform: uppercase;
+  transition: all 0.3s ease-in-out;
+  background-color: rgb(255, 150, 147);
+  cursor: pointer;
+  padding: 15px 35px;
+  margin-top: 35px;
+  margin-bottom: 100px;
+}
+#statics button:hover {
+  background: #50000b;
+  color: rgb(255, 150, 147);
+}
+.grid {
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
+}
+.staticCounter h6 {
+  font-size: 38px;
+  font-weight: normal;
+  color: white;
+  text-align: center;
+  font-family: "MyFont", sans-serif;
+}
+.staticCounter h3 {
+  font-size: 90px;
+  font-family: "MyFont", sans-serif;
+  font-weight: 300;
+  color: white;
+  padding-top: 35px;
+  padding-bottom: 25px;
+  text-align: center;
+}
+.staticCounter h5 {
+  font-size: 16px;
+  font-weight: 300;
+  color: white;
+  text-align: center;
+  line-height: 24px;
+  font-family: "Roboto", sans-serif;
+}
+.link {
+  font-family: "Roboto", sans-serif;
+  font-size: 12px;
+  color: white;
+  margin-top: 80px;
+}
+#index {
+  padding: 60px 0;
+}
+.indexBg {
+  background: url("../images/Frame_1000004686-min.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border-radius: 16px;
+}
+.firstItem {
+  display: flex;
+  align-items: center;
+  padding: 20px 42px 15px 42px;
+}
+.icons {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding-left: 32px;
+}
+.icons p {
+  font-size: 20px;
+  font-weight: 500;
+  color: #50000b;
+  font-family: "MyFont", sans-serif;
+}
+.pl-3 {
+  padding-left: 15px;
+}
+
+.secondItem {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 60px;
+  padding-bottom: 20px;
+}
+.secondItem p {
+  font-family: "MyFont", sans-serif;
+  font-size: 27.47px;
+  color: #50000b;
+  font-weight: 400;
+  line-height: 30.21px;
+  letter-spacing: -0.01em;
+}
+.university {
+  display: flex;
+  gap: 60px;
+  height: 70px;
+}
+.object {
+  height: 100%;
+  object-fit: cover;
+}
+.scientific-experts {
+  padding: 30px 0 60px;
+}
+.scientific-experts h2 {
+  margin-bottom: 15px;
+  font-size: 32px;
+  color: #50000b;
+  font-weight: 500;
+  font-family: "MyFont", sans-serif;
+  text-align: center;
+}
+.scientific-experts h4 {
+  margin-bottom: 20px;
+  font-size: 20px;
+  color: #50000b;
+  font-weight: 700;
+  font-family: "Roboto", sans-serif;
+  text-align: center;
+}
+.scientific-experts p {
+  font-size: 16px;
+  line-height: 25.6px;
+  color: #000;
+  font-weight: 300;
+  font-family: "Roboto", sans-serif;
+  margin: 0 auto;
+  width: 45%;
+  text-align: center;
+}
+.gridItems {
+  display: grid;
+  grid-template-columns: repeat(4, 25%);
+  gap: 30px;
+  margin-top: 50px;
+  margin-bottom: 70px;
+}
+.grids {
+  border-radius: 8px;
+  background: rgb(248, 232, 232);
+  display: flex;
+  border: 1px solid rgb(240, 240, 240);
+  transition: all .4s ease-in-out;
+}
+.grids:hover{
+    border: 1px solid rgb(158, 11, 15);
+}
+.grids img{
+    object-fit: cover;
+    height: 220px;
+    width: 130px;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+}
+.gridTexts {
+  padding: 25px;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.gridTexts h6 {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  font-family: "Roboto", sans-serif;
+  color: #800020;
+  padding-right: 22px;
+}
+.gridTexts h5 {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  font-family: "Roboto", sans-serif;
+  color: #800020;
+  padding-right: 20px;
+  margin-top: 8px;
+  margin-bottom: 30px;
+}
+.textss{
+    height: 100px;
+}
+.text-end {
+  text-align: end;
+
+}
+.text-end svg{
+    cursor: pointer;
+    transition: all .4s ease-in-out;
+}
+.text-end svg:hover{
+    transform: scale(1.1);
+}
+.testimonials{
+    padding: 60px 40px 30px;
+    background: rgba(255, 242, 240, 0.698);
+    border-radius: 10px;
+    border: 1px solid black;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+.relative{
+    position: relative;
+}
+.leftq{
+    position: absolute;
+    top: 10px;
+    left: 0;
+}
+.leftq img{
+    height: 27px;
+}
+.rightq img{
+    height: 27px;
+}
+.rightq{
+    position: absolute;
+    top: 55px;
+    right: 0;
+}
+.relative h3{
+    font-family: "Aeonik", sans-serif;
+    font-size: 24px;
+    line-height: 36px;
+    color: #000;
+    font-weight: normal;
+    text-align: center;
+    width: 82%;
+    margin: 0 auto;
+}
+.clients {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 45px;
+    margin-bottom: 25px;
+    gap: 30px;
+}
+.clients img{
+    border-radius: 50px;
+}
+.clientTexts h6{
+    font-size: 16px;
+    font-weight: 500;
+    color: #000;
+    font-family: "Roboto", sans-serif;
+}
+.clientTexts h5{
+    font-size: 16px;
+    font-weight: 400;
+    color: #000;
+    font-family: "Roboto", sans-serif;
+    padding: 15px 0;
+}
+.clientTexts a{
+    font-size: 16px;
+    font-weight: 400;
+    color: #000;
+    font-family: "Roboto", sans-serif;
+    font-style: italic;
+}
+#aboutPartner{
+    background: url("../images/download.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 80px 0;
+}
+.max-w{
+    max-width: 1460px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    gap: 80px;
+}
+.aboutTexts h3{
+    font-size: 42px;
+    line-height: 46.2px;
+    color: white;
+    font-weight: 300;
+    text-transform: uppercase;
+    font-family: "MyFont", sans-serif;
+}
+.aboutTexts h6{
+    font-size: 20px;
+    color: white;
+    font-weight: 500;
+    font-family: "MyFont", sans-serif;
+}
+.aboutTexts h5{
+    font-size: 16px;
+    padding-top: 8px;
+    color: white;
+    font-weight: 500;
+    font-family: "MyFont", sans-serif;
+}
+.aboutTexts p{
+    font-size: 16px;
+    line-height: 20.5px;
+    color: white;
+    font-weight: 400;
+    font-family: "Aeonik", sans-serif;
+    padding-top: 20px;
+    padding-bottom: 25px;
+    width: 87%;
+}
+#aboutPartner video{
+    border-radius: 16px;
+}
+#cardSlider{
+    padding: 100px 0;
+    background: #F9F2ED;
+}
+#cardSlider h3{
+    font-size: 42px;
+    color: #50000b;
+    font-family: "MyFont", sans-serif;
+    line-height: 50.54px;
+    text-transform: uppercase;
+    font-weight: normal;
+    text-align: center;
+    margin: 0 auto;
+    width: 56%;
+    padding-bottom: 35px;
+}
+#cardSlider h6{
+    font-size: 21px;
+    color: #50000b;
+    font-family: "Aeonik", sans-serif;
+    line-height: 50.54px;
+    font-weight: 700;
+    padding-bottom: 20px;
+    padding-top: 10px;
+}
+#cardSlider p{
+    font-size: 16px;
+    color: #000;
+    font-family: "Aeonik", sans-serif;
+    line-height: 28.8px;
+    font-weight: 400;
+    width: 58%;
+    margin: 0 auto;
+    padding-bottom: 30px;
+}
+.center{
+    text-align: center;
+}
+.gridCards{
+    padding: 40px 30px 60px;
+    display: grid;
+    grid-template-columns: repeat(4, 25%);
+}
+.card{
+    margin-bottom: 30px;
+    border-radius: 8px;
+    position: relative;
+    cursor: pointer;
+    background: white;
+    width: 313px;
+    box-shadow: 0 4px 12px #00000026;
+}
+.card img{
+    width: 100%;
+    height: 160px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    object-fit: cover;
+}
+.octa{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+.cardText{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 20px;
+}
+.cardText h4{
+    font-family: "Aeonik", sans-serif;
+    font-weight: 700;
+    font-size: 17px;
+    color: #000;
+    margin-bottom: 10px;
+}
+.cardText h5{
+    font-family: "Aeonik", sans-serif;
+    font-weight: 400;
+    line-height: 18px;
+    font-size: 15px;
+    color: #555555;
+    text-align: center;
+}
+
+.card_button {
+    background-color: #a40011;
+    color: #fff;
+    border: none;
+    padding: 18px 30px;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    cursor: pointer;
+    border-radius: 50px;
+    transition: all .3s ease;
+    width: 300px;
+}
+.card_button:hover{
+    background: #50000b;
+}

@@ -1,0 +1,4 @@
+<svg class="video-click-play-overlay__icon" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="50" cy="50" r="48" fill="rgba(255,255,255,0.15)" stroke="rgba(255,255,255,0.8)" stroke-width="2"></circle>
+                                <path d="M68 50L40 67V33L68 50Z" fill="white" stroke="white" stroke-width="3" stroke-linejoin="round"></path>
+                              </svg>
