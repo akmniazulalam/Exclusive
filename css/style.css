@@ -98,8 +98,6 @@ ol {
 .logo {
   width: 95px;
 }
-.discover:hover .dropdown {
-}
 .discoverHover {
   position: relative;
 }
@@ -118,8 +116,7 @@ ol {
   position: absolute;
   top: 60px;
   left: 6px;
-  visibility: hidden;
-  z-index: 9999;
+  opacity: 0;
   transition: all 0.4s ease-in-out;
 }
 .dropdown li a {

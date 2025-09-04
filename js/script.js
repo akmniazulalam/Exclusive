@@ -60,14 +60,15 @@ counters.forEach(counter => {
 
 let discover = document.querySelector(".discover")
 let dropdown = document.querySelector(".dropdown")
+let discoverHover = document.querySelector(".discoverHover")
 let icon = document.querySelector(".icon")
 
 discover.addEventListener("mouseenter", () => {
-  dropdown.style.visibility = "visible"
+  dropdown.style.opacity = "1"
   icon.innerHTML = `<i class="fa-solid fa-angle-up"></i>`
 })
-discover.addEventListener("mouseleave", () => {
-  dropdown.style.visibility = "hidden"
+discoverHover.addEventListener("mouseleave", () => {
+  dropdown.style.opacity = "0"
   icon.innerHTML = `<i class="fa-solid fa-angle-down"></i>`
 })
 
