@@ -1016,3 +1016,38 @@ ol {
     word-wrap: break-word;
     font-family: 'Aeonik', sans-serif;
 }
+#cost{
+  background: #F9E9D8;
+  margin-top: 80px;
+}
+.costImage{
+  width: 612px;
+  height: 598px;
+}
+.flexcost{
+  display: flex; 
+  gap: 20px;
+  padding-bottom: 30px;
+}
+.costContents{
+  padding-top: 120px;
+}
+.costContents h5{
+  font-size: 36px;
+  font-weight: normal;
+  color: #50000B;
+  font-family: "MyFont", sans-serif;
+}
+.flextextss{
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  font-family: "Aeonik", sans-serif;
+  font-weight: normal;
+  font-size: 16px;
+  color: #333;
+  padding-top: 30px;
+}
+.flextextss img{
+  width: 30px;
+}
