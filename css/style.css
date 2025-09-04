@@ -23,8 +23,7 @@ ol {
 }
 @font-face {
   font-family: "Aeonik";
-  src: url("../fonts/fonnts.com-Aeonik-Regular.ttf")
-    format("truetype");
+  src: url("../fonts/fonnts.com-Aeonik-Regular.ttf") format("truetype");
 }
 
 .top_header {
@@ -459,17 +458,17 @@ ol {
   background: rgb(248, 232, 232);
   display: flex;
   border: 1px solid rgb(240, 240, 240);
-  transition: all .4s ease-in-out;
+  transition: all 0.4s ease-in-out;
 }
-.grids:hover{
-    border: 1px solid rgb(158, 11, 15);
+.grids:hover {
+  border: 1px solid rgb(158, 11, 15);
 }
-.grids img{
-    object-fit: cover;
-    height: 220px;
-    width: 130px;
-    border-top-left-radius: 8px;
-    border-bottom-left-radius: 8px;
+.grids img {
+  object-fit: cover;
+  height: 220px;
+  width: 130px;
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
 }
 .gridTexts {
   padding: 25px;
@@ -496,188 +495,187 @@ ol {
   margin-top: 8px;
   margin-bottom: 30px;
 }
-.textss{
-    height: 100px;
+.textss {
+  height: 100px;
 }
 .text-end {
   text-align: end;
-
 }
-.text-end svg{
-    cursor: pointer;
-    transition: all .4s ease-in-out;
+.text-end svg {
+  cursor: pointer;
+  transition: all 0.4s ease-in-out;
 }
-.text-end svg:hover{
-    transform: scale(1.1);
+.text-end svg:hover {
+  transform: scale(1.1);
 }
-.testimonials{
-    padding: 60px 40px 30px;
-    background: rgba(255, 242, 240, 0.698);
-    border-radius: 10px;
-    border: 1px solid black;
-    max-width: 1000px;
-    margin: 0 auto;
+.testimonials {
+  padding: 60px 40px 30px;
+  background: rgba(255, 242, 240, 0.698);
+  border-radius: 10px;
+  border: 1px solid black;
+  max-width: 1000px;
+  margin: 0 auto;
 }
-.relative{
-    position: relative;
+.relative {
+  position: relative;
 }
-.leftq{
-    position: absolute;
-    top: 10px;
-    left: 0;
+.leftq {
+  position: absolute;
+  top: 10px;
+  left: 0;
 }
-.leftq img{
-    height: 27px;
+.leftq img {
+  height: 27px;
 }
-.rightq img{
-    height: 27px;
+.rightq img {
+  height: 27px;
 }
-.rightq{
-    position: absolute;
-    top: 55px;
-    right: 0;
+.rightq {
+  position: absolute;
+  top: 55px;
+  right: 0;
 }
-.relative h3{
-    font-family: "Aeonik", sans-serif;
-    font-size: 24px;
-    line-height: 36px;
-    color: #000;
-    font-weight: normal;
-    text-align: center;
-    width: 82%;
-    margin: 0 auto;
+.relative h3 {
+  font-family: "Aeonik", sans-serif;
+  font-size: 24px;
+  line-height: 36px;
+  color: #000;
+  font-weight: normal;
+  text-align: center;
+  width: 82%;
+  margin: 0 auto;
 }
 .clients {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: 45px;
-    margin-bottom: 25px;
-    gap: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 45px;
+  margin-bottom: 25px;
+  gap: 30px;
 }
-.clients img{
-    border-radius: 50px;
+.clients img {
+  border-radius: 50px;
 }
-.clientTexts h6{
-    font-size: 16px;
-    font-weight: 500;
-    color: #000;
-    font-family: "Roboto", sans-serif;
+.clientTexts h6 {
+  font-size: 16px;
+  font-weight: 500;
+  color: #000;
+  font-family: "Roboto", sans-serif;
 }
-.clientTexts h5{
-    font-size: 16px;
-    font-weight: 400;
-    color: #000;
-    font-family: "Roboto", sans-serif;
-    padding: 15px 0;
+.clientTexts h5 {
+  font-size: 16px;
+  font-weight: 400;
+  color: #000;
+  font-family: "Roboto", sans-serif;
+  padding: 15px 0;
 }
-.clientTexts a{
-    font-size: 16px;
-    font-weight: 400;
-    color: #000;
-    font-family: "Roboto", sans-serif;
-    font-style: italic;
+.clientTexts a {
+  font-size: 16px;
+  font-weight: 400;
+  color: #000;
+  font-family: "Roboto", sans-serif;
+  font-style: italic;
 }
-#aboutPartner{
-    background: url("../images/download.png");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    padding: 80px 0;
+#aboutPartner {
+  background: url("../images/download.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding: 80px 0;
 }
-.max-w{
-    max-width: 1460px;
-    margin: 0 auto;
-    display: flex;
-    align-items: center;
-    gap: 80px;
+.max-w {
+  max-width: 1460px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  gap: 80px;
 }
-.aboutTexts h3{
-    font-size: 42px;
-    line-height: 46.2px;
-    color: white;
-    font-weight: 300;
-    text-transform: uppercase;
-    font-family: "MyFont", sans-serif;
+.aboutTexts h3 {
+  font-size: 42px;
+  line-height: 46.2px;
+  color: white;
+  font-weight: 300;
+  text-transform: uppercase;
+  font-family: "MyFont", sans-serif;
 }
-.aboutTexts h6{
-    font-size: 20px;
-    color: white;
-    font-weight: 500;
-    font-family: "MyFont", sans-serif;
+.aboutTexts h6 {
+  font-size: 20px;
+  color: white;
+  font-weight: 500;
+  font-family: "MyFont", sans-serif;
 }
-.aboutTexts h5{
-    font-size: 16px;
-    padding-top: 8px;
-    color: white;
-    font-weight: 500;
-    font-family: "MyFont", sans-serif;
+.aboutTexts h5 {
+  font-size: 16px;
+  padding-top: 8px;
+  color: white;
+  font-weight: 500;
+  font-family: "MyFont", sans-serif;
 }
-.aboutTexts p{
-    font-size: 16px;
-    line-height: 20.5px;
-    color: white;
-    font-weight: 400;
-    font-family: "Aeonik", sans-serif;
-    padding-top: 20px;
-    padding-bottom: 25px;
-    width: 87%;
+.aboutTexts p {
+  font-size: 16px;
+  line-height: 20.5px;
+  color: white;
+  font-weight: 400;
+  font-family: "Aeonik", sans-serif;
+  padding-top: 20px;
+  padding-bottom: 25px;
+  width: 87%;
 }
-#aboutPartner video{
-    border-radius: 16px;
+#aboutPartner video {
+  border-radius: 16px;
 }
-#cardSlider{
-    padding: 100px 0;
-    background: #F9F2ED;
+#cardSlider {
+  padding: 100px 0;
+  background: #f9f2ed;
 }
-#cardSlider h3{
-    font-size: 42px;
-    color: #50000b;
-    font-family: "MyFont", sans-serif;
-    line-height: 50.54px;
-    text-transform: uppercase;
-    font-weight: normal;
-    text-align: center;
-    margin: 0 auto;
-    width: 56%;
-    padding-bottom: 35px;
+#cardSlider h3 {
+  font-size: 42px;
+  color: #50000b;
+  font-family: "MyFont", sans-serif;
+  line-height: 50.54px;
+  text-transform: uppercase;
+  font-weight: normal;
+  text-align: center;
+  margin: 0 auto;
+  width: 56%;
+  padding-bottom: 35px;
 }
-#cardSlider h6{
-    font-size: 21px;
-    color: #50000b;
-    font-family: "Aeonik", sans-serif;
-    line-height: 50.54px;
-    font-weight: 700;
-    padding-bottom: 20px;
-    padding-top: 10px;
+#cardSlider h6 {
+  font-size: 21px;
+  color: #50000b;
+  font-family: "Aeonik", sans-serif;
+  line-height: 50.54px;
+  font-weight: 700;
+  padding-bottom: 20px;
+  padding-top: 10px;
 }
-#cardSlider p{
-    font-size: 16px;
-    color: #000;
-    font-family: "Aeonik", sans-serif;
-    line-height: 28.8px;
-    font-weight: 400;
-    width: 58%;
-    margin: 0 auto;
-    padding-bottom: 30px;
+#cardSlider p {
+  font-size: 16px;
+  color: #000;
+  font-family: "Aeonik", sans-serif;
+  line-height: 28.8px;
+  font-weight: 400;
+  width: 58%;
+  margin: 0 auto;
+  padding-bottom: 30px;
 }
-.center{
-    text-align: center;
+.center {
+  text-align: center;
 }
-.gridCards{
-    padding: 40px 30px 60px;
-    display: grid;
-    grid-template-columns: repeat(4, 25%);
+.gridCards {
+  padding: 40px 30px 60px;
+  display: grid;
+  grid-template-columns: repeat(4, 25%);
 }
 .card {
   width: 313px;
   height: 360px;
   perspective: 1000px;
   cursor: pointer;
-  transition: all .4s ease-in-out;
+  transition: all 0.4s ease-in-out;
   margin-top: 30px;
 }
-.card:hover{
+.card:hover {
   transform: scale(1.03);
 }
 .card-inner {
@@ -702,18 +700,18 @@ ol {
   box-shadow: 0 4px 12px #00000026;
   background: white;
 }
-.card-back{
+.card-back {
   justify-content: flex-start !important;
   padding-top: 50px !important;
 }
-.card-back h5{
+.card-back h5 {
   font-family: "Aeonik", sans-serif;
   color: #000;
   font-weight: normal;
   font-size: 14px;
   line-height: 25.2px;
 }
-.card-front{
+.card-front {
   overflow: hidden;
 }
 .card-front img {
@@ -723,11 +721,11 @@ ol {
   border-top-right-radius: 8px;
   object-fit: cover;
   overflow: hidden;
-  transition: transform 0.4s ease; 
+  transition: transform 0.4s ease;
 }
 
 .card:hover .card-front img {
-  transform: scale(1.03); 
+  transform: scale(1.03);
 }
 
 .cardText {
@@ -771,22 +769,21 @@ ol {
   transform: rotateY(180deg);
 }
 
-
 .card_button {
-    background-color: #a40011;
-    color: #fff;
-    border: none;
-    padding: 18px 30px;
-    font-size: 14px;
-    font-weight: 700;
-    text-transform: uppercase;
-    cursor: pointer;
-    border-radius: 50px;
-    transition: all .3s ease;
-    width: 300px;
+  background-color: #a40011;
+  color: #fff;
+  border: none;
+  padding: 18px 30px;
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+  cursor: pointer;
+  border-radius: 50px;
+  transition: all 0.3s ease;
+  width: 300px;
 }
-.card_button:hover{
-    background: #50000b;
+.card_button:hover {
+  background: #50000b;
 }
 
 .hidden {
@@ -801,4 +798,221 @@ ol {
   max-height: 500px;
   border-radius: 8px;
   margin-top: 30px;
+}
+#suppliments {
+  background: #f5eaea;
+  /* padding-top: 60px; */
+  height: 100%;
+  width: 100%;
+  position: relative;
+  z-index: 99;
+  height: 688px;
+}
+.max-15 {
+  max-width: 1500px;
+  margin: 0 auto;
+  padding: 0 50px;
+}
+.bgimage {
+  width: 47%;
+}
+.bgimage img {
+  position: absolute;
+  width: 47%;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+.overlay {
+  position: absolute;
+  inset: 0;
+  height: 686px;
+  width: 100%;
+  background: rgba(245, 234, 234, 0.78);
+}
+.max-15 h5 {
+  width: 350px;
+  font-size: 40px;
+  font-weight: normal;
+  line-height: 40px;
+  color: #50000b;
+  font-family: "MyFont", sans-serif;
+  margin-bottom: 35px;
+}
+.contents {
+  position: absolute;
+  z-index: 10;
+  padding-top: 50px;
+  padding-left: 50px;
+  display: flex;
+}
+.contents img {
+  width: 378px;
+}
+.flexItems {
+  display: flex;
+  padding-left: 60px;
+  padding-top: 20px;
+}
+.monthly {
+  text-align: center;
+  padding-left: 100px;
+}
+.monthly h6 {
+  font-size: 40px;
+  font-weight: normal;
+  color: #50000b;
+  font-family: "MyFont", sans-serif;
+    padding-bottom: 50px;
+}
+.monthly h4 {
+  font-family: "Aeonik", sans-serif;
+  font-weight: normal;
+  font-size: 16px;
+  color: #50000b;
+}
+.monthly p {
+  font-size: 16px;
+  font-weight: 700;
+  color: #50000b5c;
+  font-family: "MyFont", sans-serif;
+}
+.flexTexts {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 70px;
+  padding-bottom: 24px;
+}
+.flexText {
+  display: flex;
+  align-items: center;
+  justify-content: space-between !important;
+  display: contents;
+}
+.box{
+  border: 1px solid #50000b;
+  border-radius: 16px;
+  background: #f5eaea;
+  width: 434px;
+}
+.itemms{
+  padding: 16px 25px 11px 33px;
+  border-top-left-radius: 16px;
+  border-top-right-radius: 16px;
+  background: #F5EAEA;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #50000b;
+}
+.itemmms{
+  padding: 16px 25px 11px 33px;
+  border-bottom-left-radius: 16px;
+  border-bottom-right-radius: 16px;
+  background: white;
+  display: flex;
+  justify-content: space-between;
+}
+
+.bold{
+  font-weight: 700 !important;
+}
+.dollar{
+  font-weight: 700;
+  font-family: "MyFont", sans-serif;
+  font-size: 16px;
+  color: #50000b;
+}
+#comparison{
+  padding: 80px 0;
+}
+.comparisonBox {
+    background-color: #9E0B0F;
+    color: #FFFFFF;
+    padding: 36px 0;
+    margin-top: 30px;
+    width: 100%;
+    max-width: 1400px;
+    box-sizing: border-box;
+    border-radius: 12px;
+    margin: 0 auto;
+}
+.comparisonBox h3{
+  font-size: 24px;
+  font-weight: 700;
+  font-family: "Aeonik", sans-serif;
+}
+.comparisonBox h6{
+  font-family: "MyFont", sans-serif;
+  font-weight: 500;
+  font-size: 40px;
+  padding-top: 30px;
+  padding-bottom: 25px;
+}
+.comparisonBox p{
+  font-family: "Aeonik", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+}
+.ingredients {
+    font-weight: normal;
+    line-height: 54.6px;
+    color: #333;
+    font-size: 42px;
+    font-family: "MyFont", sans-serif;
+    width: 48%;
+    margin: 0 auto;
+}
+.para {
+    font-weight: normal;
+    line-height: 30.6px;
+    color: #000;
+    font-size: 18px;
+    font-family: "Aeonik", sans-serif;
+    width: 43%;
+    padding-top: 24px;
+    margin: 0 auto;
+}
+.accordionItems {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+    border: 1px solid #50000b;
+    border-radius: 8px;
+    padding: 25px 20px;
+    margin-bottom: 30px;
+    cursor: pointer;
+    
+    transition: background-color 0.3s ease;
+}
+.accordionItems:hover{
+  background: #FFF2F0;
+}
+.emojis{
+  display: flex;
+  flex-wrap: wrap;
+  width: 200px;
+  gap: 20px;
+  font-size: 52px;
+}
+.flexxxx{
+  display: flex;
+  align-items: center;
+  gap: 60px;
+}
+.accordionTitle {
+    font-size: 21px;
+    font-family: 'Aeonik', sans-serif;
+    margin: 0 0 5px 0;
+    font-weight: 400;
+    color: #333;
+}
+.accordionSubtitle {
+    font-size: 21px;
+    margin: 0;
+    color: #50000B;
+    font-weight: 700;
+    word-wrap: break-word;
+    font-family: 'Aeonik', sans-serif;
 }
