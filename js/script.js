@@ -86,8 +86,36 @@ setInterval(() => {
   index = (index + 1) % images.length;
 }, 1000);
 
-
-const card = document.getElementById('myCard');
-card.addEventListener('click', () => {
-  card.classList.toggle('clicked');
+document.querySelectorAll('.card').forEach(card => {
+  card.addEventListener('click', () => {
+    card.classList.toggle('flip');
+  });
 });
+
+
+const toggleBtn = document.querySelector(".card_button");
+const hiddenCards = document.querySelectorAll(".gridCards .hidden");
+
+let expanded = false;
+
+toggleBtn.addEventListener("click", function () {
+  if (!expanded) {
+    hiddenCards.forEach((card, index) => {
+      setTimeout(() => {
+        card.classList.add("show");
+      }, index * 100);
+    });
+    toggleBtn.textContent = "View Less";
+    expanded = true;
+  } else {
+    hiddenCards.forEach((card, index) => {
+      setTimeout(() => {
+        card.classList.remove("show");
+      }, index * 100);
+    });
+    toggleBtn.textContent = "View All";
+    expanded = false;
+  }
+});
+
+

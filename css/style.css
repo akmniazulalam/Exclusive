@@ -669,49 +669,108 @@ ol {
     display: grid;
     grid-template-columns: repeat(4, 25%);
 }
-.card{
-    margin-bottom: 30px;
-    border-radius: 8px;
-    position: relative;
-    cursor: pointer;
-    background: white;
-    width: 313px;
-    box-shadow: 0 4px 12px #00000026;
+.card {
+  width: 313px;
+  height: 360px;
+  perspective: 1000px;
+  cursor: pointer;
+  transition: all .4s ease-in-out;
+  margin-top: 30px;
 }
-.card img{
-    width: 100%;
-    height: 160px;
-    border-top-left-radius: 8px;
-    border-top-right-radius: 8px;
-    object-fit: cover;
+.card:hover{
+  transform: scale(1.03);
 }
-.octa{
-    position: absolute;
-    top: 10px;
-    right: 10px;
+.card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
 }
-.cardText{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 40px 20px;
+
+.card.flip .card-inner {
+  transform: rotateY(180deg);
 }
-.cardText h4{
-    font-family: "Aeonik", sans-serif;
-    font-weight: 700;
-    font-size: 17px;
-    color: #000;
-    margin-bottom: 10px;
+
+.card-front,
+.card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px #00000026;
+  background: white;
 }
-.cardText h5{
-    font-family: "Aeonik", sans-serif;
-    font-weight: 400;
-    line-height: 18px;
-    font-size: 15px;
-    color: #555555;
-    text-align: center;
+.card-back{
+  justify-content: flex-start !important;
+  padding-top: 50px !important;
 }
+.card-back h5{
+  font-family: "Aeonik", sans-serif;
+  color: #000;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 25.2px;
+}
+.card-front{
+  overflow: hidden;
+}
+.card-front img {
+  width: 100%;
+  height: 160px;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  object-fit: cover;
+  overflow: hidden;
+  transition: transform 0.4s ease; 
+}
+
+.card:hover .card-front img {
+  transform: scale(1.03); 
+}
+
+.cardText {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 20px;
+}
+
+.cardText h4 {
+  font-family: "Aeonik", sans-serif;
+  font-weight: 700;
+  font-size: 17px;
+  color: #000;
+  margin-bottom: 10px;
+  text-align: center;
+  line-height: 30px;
+}
+.cardText h5 {
+  font-family: "Aeonik", sans-serif;
+  font-weight: 400;
+  line-height: 18px;
+  font-size: 15px;
+  color: #555;
+  text-align: center;
+}
+
+.octa {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+.card-back {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  transform: rotateY(180deg);
+}
+
 
 .card_button {
     background-color: #a40011;
@@ -728,4 +787,18 @@ ol {
 }
 .card_button:hover{
     background: #50000b;
+}
+
+.hidden {
+  opacity: 0;
+  max-height: 0;
+  padding: 0;
+  margin: 0;
+}
+
+.show {
+  opacity: 1;
+  max-height: 500px;
+  border-radius: 8px;
+  margin-top: 30px;
 }
